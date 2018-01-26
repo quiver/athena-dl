@@ -5,14 +5,16 @@ from setuptools import setup
  
 setup(
     name='Athena-DL',
-    version='0.1',
-    description='CLI to ',
+    version='0.5',
+    description='command line interface to query SQL to Amazon Athena and save its results',
     author='George Yoshida',
     url='https://github.com/quiver/athena-dl',
-    py_modules=['athena'],
+    packages=['athena_dl'],
+    include_package_data=True,
     install_requires=[
+        'boto3',
         'Click',
-        'retry',
+        'retrying',
     ],
    classifiers=(
        'Development Status :: 3 - Alpha',
@@ -21,6 +23,6 @@ setup(
    ),
     entry_points='''
         [console_scripts]
-        athena-dl=athena_dl:cli
+        athena-dl=athena_dl.athena_dl:cli
     '''
 )

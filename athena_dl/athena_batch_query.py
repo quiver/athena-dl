@@ -1,7 +1,5 @@
 import logging
 import pprint
-import sys
-import traceback
 
 import boto3
 from retrying import retry
