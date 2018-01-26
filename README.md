@@ -1,7 +1,26 @@
 # athena-dl
-CLI to query to Amazon Athena and save its results
 
-# Usage
+This package provides a command line interface to query SQL to Amazon Athena and save its results.
+
+The package works on Python versions:
+
+- 2.7.x and greater
+
+# Installation
+
+## install via pip
+```
+$ pip install athena-dl
+```
+## install from GitHub
+
+```
+$ git clone https://github.com/quiver/athena-dl.git
+$ cd athena-dl
+$ pip install --editable .
+```
+
+# Getting Started
 
 First create SQL files to query against Amazon athena.
 
@@ -45,16 +64,3 @@ bar.sql.log   # AWS API response for bar.sql
 ```
 
 
-# Installation
-
-## install via pip
-```
-$ pip install athena-dl
-```
-## install from GitHub
-
-```
-$ git clone https://github.com/quiver/athena-dl.git
-$ cd athena-dl
-$ pip install --editable .
-```
