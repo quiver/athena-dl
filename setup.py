@@ -5,7 +5,7 @@ from setuptools import setup
  
 setup(
     name='Athena-DL',
-    version='0.5',
+    version='0.6',
     description='command line interface to query SQL to Amazon Athena and save its results',
     author='George Yoshida',
     url='https://github.com/quiver/athena-dl',
